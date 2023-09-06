@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instalasi Debian - Syarief</title>
+
+    <!-- icon -->
+    <link rel="icon" href="/img/s.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="home">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DEB10</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown nodisplay">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-light sentuh"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#Instalasi">Instalasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#konfigurasi-ip"
+                    >Konfigurasi IP</a
+                  >
+                </li>
+                <li></li>
+                <li>
+                  <a class="dropdown-item" href="#repositori">Repositori</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#dhcp-server">DHCP Server</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#web-server"
+                    >Web Server - Apache2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#dns">DNS Server - Bind9</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#ftp">FTP Server - proftpd</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#file-server"
+                    >File Server - Samba</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#database"
+                    >Database - MariaDB</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#mailServer"
+                    >Mail Server <strong style="color: red">(NEW)</strong></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#roundCube"
+                    >Roundcube <strong style="color: red">(NEW)</strong></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <section class="hero">
+      <h1>Selamat Datang di Website Kami</h1>
+      <p>"Providing Extraordinary Experiences for You"</p>
+    </section>
+    <div class="clock" id="clock"></div>
+    <!-- Instalasi debian 10 -->
+    <div class="step" id="Instalasi">
+      <ul>
+        <li>
+          pertama buat file baru dengan cara klik "New", ikuti seperti gambar di
+          bawah :
+        </li>
+        <ol>
+          <li>
+            <a href="/img/installasi (1).png" target="_blank"
+              ><img src="/img/installasi (1).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (2).png" target="_blank"
+              ><img src="/img/installasi (2).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (3).png" target="_blank"
+              ><img src="/img/installasi (3).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (4).png" target="_blank"
+              ><img src="/img/installasi (4).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (5).png" target="_blank"
+              ><img src="/img/installasi (5).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (6).png" target="_blank"
+              ><img src="/img/installasi (6).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (7).png" target="_blank"
+              ><img src="/img/installasi (7).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (8).png" target="_blank"
+              ><img src="/img/installasi (8).png"
+            /></a>
+            <p>
+              lalu setting storage dan network nya, seperti foto di bawah ini :
+            </p>
+          </li>
+          <li>
+            <a href="/img/installasi (9).png" target="_blank"
+              ><img src="/img/installasi (9).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/installasi (10).png" target="_blank"
+              ><img src="/img/installasi (10).png"
+            /></a>
+          </li>
+        </ol>
+        <li>
+          untuk langkah selanjutnya kita mulai, dan siap untuk Instalasi, ikuti
+          step step nya
+        </li>
+        <ol>
+          <li>
+            <a href="/img/install (1).png" target="_blank"
+              ><img src="/img/install (1).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (2).png" target="_blank"
+              ><img src="/img/install (2).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (3).png" target="_blank"
+              ><img src="/img/install (3).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (4).png" target="_blank"
+              ><img src="/img/install (4).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (5).png" target="_blank"
+              ><img src="/img/install (5).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (6).png" target="_blank"
+              ><img src="/img/install (6).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (7).png" target="_blank"
+              ><img src="/img/install (7).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (8).png" target="_blank"
+              ><img src="/img/install (8).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (9).png" target="_blank"
+              ><img src="/img/install (9).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (10).png" target="_blank"
+              ><img src="/img/install (10).png"
+            /></a>
+            <p>
+              untuk melihat password tekan "space" di "Show Password in Clear"
+            </p>
+          </li>
+          <li>
+            <a href="/img/install (11).png" target="_blank"
+              ><img src="/img/install (11).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (12).png" target="_blank"
+              ><img src="/img/install (12).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (13).png" target="_blank"
+              ><img src="/img/install (13).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (14).png" target="_blank"
+              ><img src="/img/install (14).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (15).png" target="_blank"
+              ><img src="/img/install (15).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (16).png" target="_blank"
+              ><img src="/img/install (16).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (17).png" target="_blank"
+              ><img src="/img/install (17).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (18).png" target="_blank"
+              ><img src="/img/install (18).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (19).png" target="_blank"
+              ><img src="/img/install (19).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (20).png" target="_blank"
+              ><img src="/img/install (20).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (21).png" target="_blank"
+              ><img src="/img/install (21).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (22).png" target="_blank"
+              ><img src="/img/install (22).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (23).png" target="_blank"
+              ><img src="/img/install (23).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (24).png" target="_blank"
+              ><img src="/img/install (24).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (25).png" target="_blank"
+              ><img src="/img/install (25).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (26).png" target="_blank"
+              ><img src="/img/install (26).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (27).png" target="_blank"
+              ><img src="/img/install (27).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (28).png" target="_blank"
+              ><img src="/img/install (28).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (29).png" target="_blank"
+              ><img src="/img/install (29).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (30).png" target="_blank"
+              ><img src="/img/install (30).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (31).png" target="_blank"
+              ><img src="/img/install (31).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (32).png" target="_blank"
+              ><img src="/img/install (32).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (33).png" target="_blank"
+              ><img src="/img/install (33).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (34).png" target="_blank"
+              ><img src="/img/install (34).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (35).png" target="_blank"
+              ><img src="/img/install (35).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (36).png" target="_blank"
+              ><img src="/img/install (36).png"
+            /></a>
+            <p>tekan "space" untuk check atau uncheck options</p>
+          </li>
+          <li>
+            <a href="/img/install (37).png" target="_blank"
+              ><img src="/img/install (37).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (38).png" target="_blank"
+              ><img src="/img/install (38).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (39).png" target="_blank"
+              ><img src="/img/install (39).png"
+            /></a>
+          </li>
+          <li>
+            <a href="/img/install (40).png" target="_blank"
+              ><img src="/img/install (40).png"
+            /></a>
+            <p>selamat Instalasi debian10 sudah selesai</p>
+          </li>
+          <li>
+            <a href="/img/install (41).png" target="_blank"
+              ><img src="/img/install (41).png"
+            /></a>
+          </li>
+        </ol>
+      </ul>
+    </div>
+
+    <!-- konfigurasi ip -->
+    <div class="step" id="konfigurasi-ip">
+      <h1>Konfigurasi IP</h1>
+      <ol>
+        <li>Login menggunakan user root</li>
+        <li>lalu ketikan <mark>nano /etc/network/interfaces</mark></li>
+        <li>ketikan :</li>
+        <p>auto enp0s3</p>
+        <p>iface enp0s3 inet static</p>
+        <p>address 192.168.136.1 <em>(ip bebas)</em></p>
+        <p>netmask 255.255.255.0</p>
+        <li>lalu save dengan cara <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          langkah terakhir merestart ip dengan command
+          <mark>/etc/init.d/networking restart</mark>
+        </li>
+      </ol>
+    </div>
+
+    <!-- repositori -->
+    <div class="step" id="repositori">
+      <h1>Menambahkan DVD di Debian10</h1>
+      <ol>
+        <li>login menggunakan user root</li>
+        <li>download / siapkan dvd yang di butuhkan</li>
+        <li>
+          ketik <mark>apt-cdrom add</mark> lalu pilih dvd yang ingin di
+          tambahkan
+        </li>
+        <li>lakukan kepada dvd yang lainnya</li>
+        <li>
+          untuk mengecek dvd ketikan <mark>nano /etc/apt/sources.list</mark>
+        </li>
+      </ol>
+    </div>
+
+    <!-- dhcp server -->
+    <div class="step" id="dhcp-server">
+      <h1>Instalasi dan Konfigurasi DHCP server</h1>
+      <ol>
+        <li>login menggunakan user root</li>
+        <li>
+          lalu setting ip server terlebih dahulu
+          <a href="#konfigurasi-ip">klik di sini</a>
+        </li>
+        <li>
+          ketikan <mark>apt-get install isc-dhcp-server</mark> untuk menginstall
+          dhcp server
+        </li>
+        <li>masukan dvd 2, <a href="#repositori">klikc disini</a></li>
+        <li>
+          kemudian konfigurasi file dhcpd.conf dengan command
+          <mark>nano /etc/dhcp/dhcpd.conf</mark> seperti gambar di bawha ini
+          <a href="/img/dhcp (1).png"><img src="/img/dhcp (1).png" /></a>
+        </li>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          lalu konfigurasi file default/isc-dhcp-server dengan command
+          <mark>nano /etc/default/isc-dhcp-server</mark>
+        </li>
+        <li>
+          ketikan enp0s3 dalam INTERFACESv4 <mark>INTERFACES="enp0s3"</mark>
+        </li>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          langkah terakhir merestart dhcp server dengam command
+          <mark>/etc/init.d/isc-dhcp-server restart</mark>
+        </li>
+      </ol>
+    </div>
+
+    <!-- web server -->
+    <div class="step" id="web-server">
+      <h1>Instalasi dan Konfigurasi Web Server (apache2)</h1>
+      <ol>
+        <li>login menggunakan user root</li>
+        <li>
+          lalu setting ip server terlebih dahulu
+          <a href="#konfigurasi-ip">klik di sini</a>
+        </li>
+        <li>
+          ketik <mark>apt-get install apache2 -y</mark> untuk menginstall web
+          sever
+        </li>
+        <li>masukan dvd yang butuhkan</li>
+        <li>
+          Jika sudah selesai, Setting ip address nya terlebih dahulu<br /><a
+            href="/img/web-server (1).png"
+            ><img src="/img/dns (4).png"
+          /></a>
+        </li>
+        <li>Kemudian coba PING dari client ke server menggunakan cmd</li>
+        <li>
+          Selanjutnya buka web browser, kemudian ketikkan alamat IP address
+          server, jika tampilannya seperti gambar dibawah ini itu artinya proses
+          Instalasi web server telah berhasil<br /><a
+            href="/img/web-server (2).webp"
+            ><img src="/img/web-server (2).webp"
+          /></a>
+        </li>
+        <li>
+          untuk merubah tampilan default ketikan <mark>cd /var/www/html</mark>
+        </li>
+        <li>
+          ketik <mark>rm index.html</mark> untuk menghapus file index.html
+        </li>
+        <li>selanjutnya ketik <mark>nano index.html</mark></li>
+        <li>ketikan dalam file seperti di bawah ini :</li>
+        <pre>
+            &#60;html&#62;
+              &#60;head&#62;
+                &#60;title&#62;Syarief&#60;/title&#62;
+              &#60;/head&#62;
+              &#60;body&#62;
+                &#60;h1&#62; Selamat Datang &#60;/h1&#62;
+                &#60;p&#62; Created by : Syarief &#60;/p&#62;
+              &#60;/body&#62;
+            &#60;/html&#62;
+          </pre
+        >
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          untuk merestart ketikan <mark>/etc/init.d/apache2 restart</mark>
+        </li>
+      </ol>
+    </div>
+
+    <!-- dns -->
+    <div class="step" id="dns">
+      <h1>Instalasi dan Konfigurasi DNS (bind9)</h1>
+      <ol>
+        <li>login menggunakan user root</li>
+        <li>
+          lalu setting ip server terlebih dahulu
+          <a href="#konfigurasi-ip">klik di sini</a>
+        </li>
+        <li>selanjutnya siapkan DVD 1 dan DVD 2</li>
+        <li>
+          Lalu install bind9 dengan command
+          <mark>apt-get install bind9 -y</mark>
+        </li>
+        <li>
+          masukan dvd yang di butuhkan, jika terdapat pilihan pilih "Force
+          Unmount"
+        </li>
+        <li>
+          dan jika Instalasi error ketikan,
+          <mark>apt --fix-broken install -y</mark>
+        </li>
+        <li>
+          masukan lagi dvd yang di buthkan, jika terdapat pilihan pilih "Force
+          Unmount"
+        </li>
+        <li>
+          langkah selanjutnya pindahkan direktori ke bind, dengan command
+          <mark>cd /etc/bind</mark>
+        </li>
+        <li>
+          lalu kita akan membuat copy file local dengan command
+          <mark>cp db.local db.syarief</mark>
+        </li>
+        <li>
+          selanjutnya, konfigurasi file db.syarief dengan command
+          <mark>nano db.syarief</mark>
+          <a href="/img/dns (1).png"><img src="/img/dns (1).png" /></a>
+        </li>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          lalu kita akan membuat copy file local dengan command
+          <mark>cp db.127 db.192</mark>
+        </li>
+        <li>
+          selanjutnya, konfigurasi file db.192 dengan command
+          <mark>nano db.192</mark>
+          <a href="/img/dns (2).png"><img src="/img/dns (2).png" /></a>
+        </li>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          berikutnya konfigurasi file named.conf.local dengan command
+          <mark>nano named.conf.local</mark>
+          <p>ketikan :</p>
+          <pre>
+zone "syarief.com" {
+  type master;
+  file "/etc/bind/db.syarief";
+};
+
+zone "136.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192";
+};
+            </pre
+          >
+        </li>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          berikutnya konfigurasi file named.conf.options dengan command
+          <mark>nano named.conf.options</mark>
+          <a href="/img/dns (3).png"><img src="/img/dns (3).png" /></a>
+        </li>
+        <li>
+          selanjutnya konfigurasi resolv.conf dengan command
+          <mark>nano /etc/resolv.conf</mark>
+          <p>lalu ketikan</p>
+          <pre>
+search syarief.com
+nameserver 192.168.136.1
+            </pre
+          >
+        </li>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          langkah terakhir yaitu merestart dns dengan commmand
+          <mark>/etc/init.d/bind9 restart</mark>
+        </li>
+        <li>
+          sebelum mengecek dns rubah ip pada control panel seuai ip server
+          <a href="/img/dns (4).png"><img src="/img/dns (4).png" /></a>
+        </li>
+        <li>
+          untuk mengecek dns server install dnsutils dengan command
+          <mark>apt-get install dnsutils -y</mark>
+        </li>
+        <li>masukan dvd yang di butuhkan</li>
+        <li>
+          ketikan <mark>nslookup syarief.com</mark> atau
+          <mark>nslookup 192.168.136.1</mark> bisa juga serach di browser.
+        </li>
+      </ol>
+    </div>
+
+    <!-- ftp server -->
+    <div class="step" id="ftp">
+      <h1>Instalasi dan Konfigurasi FTP Server (proftpd)</h1>
+      <ol>
+        <li>login menggunakan user root</li>
+        <li>
+          lalu setting ip server terlebih dahulu
+          <a href="#konfigurasi-ip">klik di sini</a>
+        </li>
+        <li>
+          install ftp server dengan command
+          <mark>apt-get install proftpd -y</mark>
+        </li>
+        <li>masukan dvd yang butuhkan</li>
+        <li>
+          jika terjadi kesalahan saat menginstall ketikan
+          <mark>apt --fix-broken install -y</mark>
+        </li>
+        <li>masukan dvd yang butuhkan</li>
+        <li>
+          lalu konfigurasi file /etc/proftpd/proftpd.conf dengan command
+          <mark>nano /etc/proftpd/prodtpd.conf</mark>
+        </li>
+        <li>
+          rubah seperti gambar di bawah ini
+          <a href="/img/ftp (1).png"><img src="/img/ftp (1).png" /></a>
+          <a href="/img/ftp (2).png"><img src="/img/ftp (2).png" /></a>
+        </li>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          Selanjutnya buka web browser, kemudian ketikkan alamat IP address
+          server, jika tampilannya seperti gambar dibawah ini itu artinya proses
+          Instalasi web server telah berhasil<br /><a href="/img/ftp (3).png"
+            ><img src="/img/ftp (3).png"
+          /></a>
+        </li>
+        <li>rubah direktori ke /home dengan command <mark>cd /home</mark></li>
+        <li>
+          lalu buat direktori ftp-server dengan command
+          <mark>mkdir ftp-server</mark>
+        </li>
+        <li>
+          untuk merubah access direktori ketikan
+          <mark>chmod 777 ftp-server</mark>
+        </li>
+        <li>
+          lalu tambahkan user sesuai pada file prodtpd.conf dengan command
+          <mark>adduser tkj</mark><br />masukan new password : 123<br />re-enter
+          password : 123<br />full name : tkj<br />room number :<br />work phone
+          :<br />home phone :<br />other :<br />lalu y
+        </li>
+        <li>
+          restart ftp server dengan command
+          <mark>/etc/init.d/proftpd restrat</mark>
+        </li>
+        <li>buka winscp, <a href="https://s.id/winscp">klik disini</a></li>
+        <li>
+          lakukan seperti gambar di bawah ini
+          <a href="/img/ftp (4).png"><img src="/img/ftp (4).png" /></a><br />
+          file protocol (ftp)<br />
+          hostname (ip server)<br />
+          user name : tkj<br />
+          password : 123
+        </li>
+        <li>
+          selanjutnya upload folder yang ingin di upload seperti gambar di bawah
+          ini
+          <a href="/img/ftp (5).png"><img src="/img/ftp (5).png" /></a>
+        </li>
+        <li>
+          jika sudah, buka file explorer pergi ke network ketikan ip server
+          dengan slash terbalik
+        </li>
+        contoh :<br />
+        \\192.168.7.1
+      </ol>
+    </div>
+
+    <!-- file server -->
+    <div class="step" id="file-server">
+      <h1>Instalasi dan Konfigurasi file server (samba)</h1>
+      <ol>
+        <li>login menggunakan user root</li>
+        <li>
+          lalu setting ip server terlebih dahulu
+          <a href="#konfigurasi-ip">klik di sini</a>
+        </li>
+        <li>
+          kemudian ketik <mark>apt-get install samba -y</mark> untuk mengintall
+          file server
+        </li>
+        <li>masukan DVD yang di butuhkan</li>
+        <li>
+          untuk memastikan samba telah terinstall ketik ulang
+          <mark>apt-get install samba -y</mark>
+        </li>
+        <li>
+          kemudian konfigurasi file smb dengan command
+          <mark>nano /etc/samba/smb.conf</mark>
+        </li>
+        <li>scroll hingga paling akhir dan ketikan :</li>
+        <p>[Sharing]</p>
+        <p>path = /home/sahring</p>
+        <p>writeable = yes</p>
+        <p>read only = yes</p>
+        <p>browsable = yes</p>
+        <p>public = yes</p>
+        <li>jika sudah save file dengan <mark>ctrl + s</mark></li>
+        <li>untuk keluar dari konfigurasi ketikan <mark>ctrl + x</mark></li>
+        <li>
+          pindahkan direktori ke home dengan command <mark>cd /home</mark>
+        </li>
+        <li>buat file sharing dengan command <mark>mkdir sharing</mark></li>
+        <li>
+          atur access folder dengan command <mark>chmod 777 sharing</mark>
+        </li>
+        <li>
+          langkah terakhir restart file server dengan command
+          <mark>/etc/init.d/samba-ad-dc restart</mark>
+        </li>
+        <li>
+          untuk mengecek file server berhasil, buka file explorer pergi ke
+          network ketikan ip server
+        </li>
+        <em>\\192.168.1.1 (contoh)</em>
+      </ol>
+    </div>
+
+    <!-- database -->
+    <div class="step" id="database">
+      <h1>Instalasi dan Konfigurasi Database (MariaDB)</h1>
+      <ol>
+        <li>login menggunakan user root</li>
+        <li>
+          lalu setting ip server terlebih dahulu
+          <a href="#konfigurasi-ip">klik di sini</a>
+        </li>
+        <li>rubah juga ip pada control panel sesuai ip server</li>
+        <li>
+          ketikan <mark>apt-get install mariadb-server -y</mark> untuk
+          menginstall mariadb
+        </li>
+        <li>masukan dvd 1 <a href="#repositori">klik di sini</a></li>
+        <li>
+          kemudian cek status layanan dengan perintah
+          <mark>systemctl status mariadb</mark>
+        </li>
+        <li>
+          ketikan <mark>ctrl + x</mark> pada keyboard untuk keluar dari status
+        </li>
+        <li>
+          untuk memulai ketikan perintah
+          <mark>mysql_secure_installation</mark> lakukan seperti di bawah ini :
+          <pre>
+
+...
+Enter current password for root (enter for none): <em>(kosong)</em>
+...
+Set root password? [Y/n] <em>y</em>
+New password: 123 <em>(bebas)</em>
+Re-enter new password: 123 <em>(masukan kembali password)</em>
+...
+Remove annonymous users? [Y/n] <em>y</em>
+...
+Disallow root login remotely? [Y/n] <em>y</em>
+...
+Remove test database and access to it? [Y/n] <em>y</em>
+...
+Relod privillege tables now? [Y/n] <em>y</em>
+...
+Thanks for using MariaDB
+            </pre>
+        </li>
+        <li>
+          lalu untuk mengakses ke server ketikan perintah
+          <mark>mysql -u root -p</mark>
+        </li>
+        <li>list perintah MariaDB</li>
+        <table border="1px">
+          <tr>
+            <th>Perintah</th>
+            <th>Fungsi</th>
+          </tr>
+          <tr>
+            <td>create database siswa;</td>
+            <td>membuat database baru</td>
+          </tr>
+          <tr>
+            <td>show database;</td>
+            <td>melihat list database</td>
+          </tr>
+          <tr>
+            <td>use siswa;</td>
+            <td>menggunakan datbase baru yang telah di buat</td>
+          </tr>
+          <tr>
+            <td>show tables;</td>
+            <td>untuk melihat isi table yang di buat</td>
+          </tr>
+          <tr>
+            <td rolspan="2">
+              nama varchar(50) not null <em>enter</em><br />
+              absen char(2) not null <em>enter</em><br />
+              jurusan varchar(10) not null; <em>enter</em><br />
+            </td>
+            <td>create table siswa</td>
+          </tr>
+          <tr>
+            <td>desc siswa;</td>
+            <td>untuk melihat deskripsi struktur tabel</td>
+          </tr>
+          <tr>
+            <td>
+              INSERT INTO 'siswa' ('nama', 'absen', 'jurusan') VALUES ('syarief
+              rangga nirwana', '25', 'tkj');
+            </td>
+            <td>untuk memasukan data ke sebuah tabel</td>
+          </tr>
+          <tr>
+            <td>SELECT * FROM siswa;</td>
+            <td>untuk menampilkan data yang telah ditambahkan</td>
+          </tr>
+          <tr>
+            <td>DELETE FROM 'siswa' WHERE 'siswa'. 'absen' = 27;</td>
+            <td>untuk menghapus isi data yang di pilih</td>
+          </tr>
+          <tr>
+            <td>exit</td>
+            <td>untuk keluar dari MariaDB</td>
+          </tr>
+        </table>
+      </ol>
+    </div>
+
+    <!-- Mail Server -->
+    <div class="step" id="mailServer">
+      <h1>Konfigurasi Mail Server</h1>
+      <ol>
+        <li>
+          Langkah pertama yaitu konfigurasi IP kalian,
+          <a href="#konfigurasi-ip">click here</a>
+        </li>
+        <li>
+          Pastikan sudah menginstall DNS (Domain Name System) dan tambahkan
+          subdomain Installasi pada file /etc/bind/db.syarief (sesuai yang
+          kalian setting). <br />
+          tambahkan seperti ini :
+        </li>
+        <pre>
+mail  IN  A   192.168.27.1 (ip server kalian) 
+            </pre
+        >
+        <p>jika sudah simpan dengan cara ctrl + x, y</p>
+        <li>
+          langkah selanjutnya install mail server dengan command
+          <mark>apt install postfix dovecot-imapd dovecot-pop3d -y</mark>
+        </li>
+        <li>
+          akan muncul jendela baru seperti gambar dibawah ini. Pilih Internet
+          Site
+          <img src="/img/mailServer (1).png" alt="" />
+        </li>
+        <li>
+          Akan muncul jendela baru lagi, Isikan domain yang akan dipakai oleh
+          mail server kita, <i>example : mail.syarief.com</i>
+        </li>
+        <li>
+          Kemudian buat directory untuk menyimpan mail server kita, dengan
+          perintah: <mark>maildirmake.dovecot /etc/skel/Maildir</mark>
+        </li>
+        <li>
+          <img src="/img/mailServer (3).png" alt="" /><br />
+          Lakukan konfigurasi aplikasi postfix dengan mengetikkan perintah
+          <mark>nano /etc/postfix/main.cf</mark>
+          Pada baris dibawah tambahkan code home_mailbox = Maildir/ seperti
+          gambar di atas
+        </li>
+        <li>
+          Lakukan perubahan pada file 10-mail.conf dengan mengetikkan perintah
+          <mark>nano /etc/dovecot/conf.d/10-mail.conf</mark>
+          <img src="/img/mailServer (4).png" alt="" /><br />
+          konfigurasi seperti gambar di atas
+        </li>
+        <li>
+          Lakukan perubahan pada file 10-auth.conf dengan mengetikkan perintah
+          <mark>nano /etc/dovecot/conf.d/10-auth.conf</mark>
+          <!-- <img src="/img/mailServer (4).png" alt=""> -->
+          <img src="/img/mailServer (5).png" alt="" /><br />
+          konfigurasi seperti gambar di atas
+        </li>
+        <li>
+          Lakukan perubahan pada file dovecot.conf dengan mengetikkan perintah
+          <mark>nano /etc/dovecot/dovecot.conf</mark>
+          <img src="/img/mailServer (6).png" alt="" />
+        </li>
+        <li>
+          Kita lakukan konfigurasi kembali pada paket aplikasi postfix dengan
+          mengetikkan perintah <mark>dpkg-reconfigure postfix</mark>
+        </li>
+        <li>
+          Kemudian akan muncul jendela baru seperti gambar dibawah ini. Pilih
+          Internet Site
+          <img src="/img/mailServer (1).png" alt="" />
+        </li>
+        <li>
+          Akan muncul jendela baru lagi, Isikan domain yang akan dipakai oleh
+          mail server kita
+          <img src="/img/mailServer (2).png" alt="" />
+        </li>
+        <li>
+          Pada bagian Root and Postmaster mail recipient: kita kosongkan saja
+        </li>
+        <li>
+          Kemudian pastikan subdomain sudah muncul pada jendela berikutnya
+        </li>
+        <li>
+          Pada bagian “Force synchronous updates on mail queue?” kita pilih “NO”
+        </li>
+        <li>
+          Pada baris paling akhir, kita isikan Network ID yang digunakan oleh
+          mail server kita.
+        </li>
+        <li>Pada jendela “Mailbox size limit (bytes)” biarkan 0 lalu enter</li>
+        <li>
+          Bila muncul perintah, bisa langsung tekan “OK” untuk melanjutkan !
+        </li>
+        <li>Kita pilih IP Address versi 4 atau ipv4</li>
+        <li>
+          Jangan lupa untuk merestart semua yang telah di konfigurasi (DNS,
+          POSTFIX, DOVECOT) dengan command : <br />
+          - <mark>/etc/init.d/bind9 restart</mark><br />
+          - <mark>/etc/init.d/postfix restart</mark><br />
+          - <mark>/etc/init.d/dovecot restart</mark>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Roundcube Server -->
+    <div class="step" id="roundCube">
+      <h1>Roundcube</h1>
+      <ol>
+        <li>
+          Sebelum melakukan proses installasi webmail roundcube pastikan kalian
+          sudah menginstall mail server terlebih dahulu di server debian
+          <a href="#mailServer">click here</a>
+        </li>
+        <li>
+          Jika sudah membuat mail server pada debian, kemudian install web
+          server apache. Perintah untuk melakukan installasi web server apache
+          adalah <mark>apt-get install apache2</mark>
+        </li>
+        <li>
+          Kemudian pastikan sudah menginstall database MariaDB
+          <a href="#database">click here</a>
+        </li>
+        <li>
+          jika MariaDB sudah terinstall masuk ke database dengan command
+          <mark>mysql -u root -p</mark>
+        </li>
+        <li>
+          ketikkan perintah seperti di bawah ini : <br />
+          <ol>
+            <li>> create database roundcube;</li>
+            <li>> create user 'roundcube'@'localhost' identified by '123';</li>
+            <li>
+              > grant all privileges on roundcube.* to 'roundcube'@'localhost';
+            </li>
+            <li>> flush privileges;</li>
+          </ol>
+          jika sudah exit
+        </li>
+        <li>
+          kemudian install webmail roundcube dengan perintah
+          <mark>apt install roundcube -y</mark>
+        </li>
+        <li>
+          Pada saat proses installasi akan ada sebuah jendela pertanyaan
+          configure database for roundcube with dbconfig-common? pilih saja Yes
+        </li>
+        <li>
+          Kemudian akan ada pertanyaa mysql application password for roundcube
+          isikan password bebas
+        </li>
+        <li>
+          kemudian akan ada jendela baru lagi Password confirmation masukkan
+          password yang tadi isi
+        </li>
+        <li>
+          Lakukan konfigurasi roundcube pada file config.inc.php dengan
+          mengetikkan perintah <mark>nano /etc/roundcube/config.inc.php</mark
+          ><br />Lakukan perubahan pada <br />
+          $config[‘default_host’] = ‘mail.syarief.com’; --> isi dengan domain
+          servernya <br />
+          $config[‘smtp_server’] = ‘mail.syarief.com’; --> isi dengan domain
+          servernya <br />
+          $config[‘smtp_user'] = ‘ ’; --> dikosongkan <br />
+          $config[‘smtp_pass'] = ‘ ’; --> dikosongkan
+        </li>
+        <li>
+          Masuk ke directory sites-available dengan perintah
+          <mark>cd /etc/apache2/sites-available</mark><br />
+          kemudian copy file 000-default.conf menjadi mail.conf dengan perintah
+          <mark>cp 000-default.conf mail.conf</mark>
+        </li>
+        <li>
+          Kemudian lakukan konfigurasi pada file mail.conf, dengan mengetikkan
+          perintah <mark>nano mail.conf</mark><br />
+          lakukan perubahan pada <br />
+          … <br />
+          ServerName mail.syarief.com --> hapus tanda pagar yang ada di depannya
+          dan subdomain <br />
+          DocumentRoot /var/lib/roundcube --> arahkan ke dokumen roundcube
+          <br />
+          …
+        </li>
+        <li>
+          Selanjutnya aktifkan file main.conf dengan perintah
+          <mark>a2ensite mail.conf</mark> dan restart apache dengan perintah
+          <mark>systemctl reload apache2</mark>
+        </li>
+        <li>
+          Kemudian masuk ke browser di pc client dan ketikkan subdomain yang
+          sudah dibuat yaitu mail.syarief.com
+        </li>
+        <li>
+          sebelum masuk ke browser silahkan buat 2 user baru untuk manjadikan
+          sisi pengirim dan sisi penerima dengan perintah : <br />
+          <mark>adduser syarief <i>(bebas)</i></mark> <br />
+          <mark>adduser rangga<i>(bebas)</i></mark>
+        </li>
+      </ol>
+    </div>
+
+    <!-- up btn -->
+    <a href="#home" class="btn-up">UP</a>
+
+    <!-- Footer -->
+    <div class="my-5">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #1c2331"
+      >
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-between p-4"
+          style="background-color: #6351ce"
+        >
+          <!-- Left -->
+          <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">DEB10</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>Website ini untuk edukasi saja.</p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Sosial Media</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="https://instagram.com/rangga_nir" class="text-white"
+                    >Instagram : @Rangga_nir</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="text-white">-</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white">-</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white">-</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p><i class="fas fa-home mr-3"></i>Address : -</p>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i>Email :
+                  <a
+                    href="mailto:info@example.com"
+                    style="text-decoration: none; color: white"
+                    >syariefrangga@gmail.com</a
+                  >
+                </p>
+                <p>
+                  <i class="fas fa-phone mr-3"></i>Phone :
+                  <a
+                    class="whatsapp-link"
+                    id="whatsappLink"
+                    href="#"
+                    style="text-decoration: none; color: white"
+                    >+62 895-0273-3339</a
+                  >
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          Copyright © 2023 Syarief by InternalNetwork. All Rights Reserved.
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+    <!-- java script -->
+    <script src="/script/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

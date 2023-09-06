@@ -1,0 +1,292 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 500px) {
+  *,
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.5s;
+  }
+
+  .hero p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 1s;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #333;
+    background-color: rgba(10, 10, 10, 0.2);
+    border-radius: 50px;
+    padding: 10px;
+  }
+
+  .sentuh li:hover a {
+    color: grey;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg, #fffbc1, #fffbc1); */
+    background: linear-gradient(135deg, #f6d365, #fda085, #f6d365);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  .container-fluid a {
+    font-weight: bolder;
+  }
+
+  .step {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.5s;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  .step h1 {
+    text-align: center;
+  }
+
+  .step ol li img {
+    width: 75%;
+    margin: 5px;
+    margin: 50px;
+    box-shadow: 5px 5px 1px black;
+  }
+
+  table tr td,
+  table tr th {
+    width: 500px;
+    padding: 10px;
+    border: solid;
+  }
+
+  .btn-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  footer {
+    position: relative;
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 423px) {
+  *,
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .sentuh li:hover a {
+    color: blue;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg, #fffbc1, #fffbc1); */
+    background: linear-gradient(135deg, #f6d365, #fda085, #f6d365);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  .container-fluid a {
+    font-weight: bolder;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.5s;
+  }
+
+  .hero p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 1s;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #333;
+    background-color: rgba(10, 10, 10, 0.2);
+    border-radius: 50px;
+    padding: 10px;
+  }
+
+  .step {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.5s;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  .step h1 {
+    text-align: center;
+  }
+
+  .step ol li img {
+    width: 80%;
+    margin: 5px;
+  }
+
+  table tr td,
+  table tr th {
+    width: 300px;
+    padding: 10px;
+    border: solid;
+  }
+
+  footer {
+    position: relative;
+    bottom: -50px;
+  }
+
+  .p-4 {
+    height: 80px;
+  }
+
+  .text-lg-start {
+    height: auto;
+  }
+
+  .btn-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
